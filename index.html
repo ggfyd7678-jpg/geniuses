@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحدي العباقرة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🧠 تحدي العباقرة</h1>
+            <p>اختبر ذكاءك وتحدى أصدقاءك!</p>
+        </header>
+
+        <div class="info">
+            <div>⭐ النقاط: <span id="score">0</span></div>
+            <div>⏱️ الوقت: <span id="timer">15</span></div>
+            <div>📌 السؤال: <span id="number">1</span>/10</div>
+        </div>
+
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+
+        <div id="startScreen">
+            <h2>هل أنت مستعد للتحدي؟ 🔥</h2>
+            <p>أجب عن 10 أسئلة واجمع أكبر عدد من النقاط.</p>
+            <button onclick="startGame()">ابدأ اللعب 🚀</button>
+        </div>
+
+        <div id="gameScreen" class="hidden">
+            <h2 id="question">السؤال هنا</h2>
+            <div id="answers" class="answers"></div>
+            <p id="feedback"></p>
+            <button id="nextBtn" class="hidden" onclick="nextQuestion()">السؤال التالي ⬅</button>
+        </div>
+
+        <div id="resultScreen" class="hidden">
+            <h2>🏆 انتهى التحدي!</h2>
+            <h1 id="finalScore">0</h1>
+            <p id="resultMessage"></p>
+            <button onclick="startGame()">العب مرة أخرى 🔄</button>
+        </div>
+
+    </div>
+
+    <footer>
+        صُنع بحب ❤️ تحدي العباقرة
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
